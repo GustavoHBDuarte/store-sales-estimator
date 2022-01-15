@@ -55,7 +55,6 @@ Nesse problema</font></p>
        <th><font size="3">titulo 3</font></th>
        <th><font size="3">titulo 4</font></th>
    </tr>
-   </thead>
    <tbody>
    <tr>
        <td><font size="3">Body1 linha1</font></td>
@@ -82,6 +81,7 @@ Nesse problema</font></p>
        <td><font size="3">Foot 3</font></td>
        <td><font size="3">Foot 4</font></td>
    </tfoot>
+    </thead>
 </table>
 
 
