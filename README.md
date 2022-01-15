@@ -47,42 +47,11 @@ Nesse problema</font></p>
 <p><font size="3">Parágrafo</font></p>
 
 
-<table border="1">
-   <thead>
-   <tr>
-       <th><font size="3">titulo 1</font></th>
-       <th><font size="3">titulo 2</font></th>
-       <th><font size="3">titulo 3</font></th>
-       <th><font size="3">titulo 4</font></th>
-   </tr>
-   <tbody>
-   <tr>
-       <td><font size="3">Body1 linha1</font></td>
-       <td><font size="3">Body2 linha1</font></td>
-       <td><font size="3">Body3 linha1</font></td>
-       <td><font size="3">Body4 linha1</font></td>
-   </tr>
-   <tr>
-       <td><font size="3">Body1 linha2</font></td>
-       <td><font size="3">Body2 linha2</font></td>
-       <td><font size="3">Body3 linha2</font></td>
-       <td><font size="3">Body4 linha2</font></td>
-   </tr>
-          <tr>
-       <td><font size="3">Body1 linha3</font></td>
-       <td><font size="3">Body2 linha3</font></td>
-       <td><font size="3">Body3 linha3</font></td>
-       <td><font size="3">Body4 linha3</font></td>
-   </tr>   
-   </tbody>
-   <tfoot>
-       <td><font size="3">Foot 1</font></td>
-       <td><font size="3">Foot 2</font></td>
-       <td><font size="3">Foot 3</font></td>
-       <td><font size="3">Foot 4</font></td>
-   </tfoot>
-    </thead>
-</table>
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
 
 
 
