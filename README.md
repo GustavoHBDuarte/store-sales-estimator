@@ -1,11 +1,11 @@
 <h1>1- Overview and business problem</h1>
 
 <br>
-<p><font size="3">Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.</font></p>
+<p><font size="3">Rossmann operates over 3,000 drug stores in 7 European countries.</br> 
+Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance.</br> Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. 
+</br>With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.</font></p>
 
-<p><font size="3">In this (fictitious) problem, the company's CFO asked its managers to forecast sales for each store for the next six weeks in order to define a budget for the renovation of the stores.</font></p>
-
-<p><font size="3">For this purpose a machine learning model was implemented aimed to forecast daily sales for six weeks. The corresponding model was sucessifully deployed in order to provide predictions to be consumed by a Telegram bot.</font></p>
+<p><font size="3">For this purpose a machine learning model was implemented aimed to forecast daily sales for six weeks. The corresponding model was further sucessifully deployed in order to provide predictions to be consumed by a Telegram bot.</font></p>
 
 <h1>2- Assumptions</h1>
 
