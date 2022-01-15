@@ -7,6 +7,10 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 
 <p><font size="3">For this purpose a machine learning model was implemented aimed to forecast daily sales for six weeks. The corresponding model was further sucessifully deployed in order to provide predictions to be consumed by a Telegram bot.</font></p>
 
+<p><font size="3"><b>Disclaimer:</b> The business context herein presented is fictitious and was used only for the purpose of the development of this project.</font></p>
+
+
+
 <h1>2- Assumptions</h1>
 
 <br>
