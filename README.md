@@ -1,3 +1,5 @@
+
+
 <h1><b><font color="#cc0000"><i>Store sales estimator</i></font></b></h1>
 
 <h1>1- Overview and business problem</h1>
@@ -39,25 +41,29 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 
 <br>
 <ol>
-  <li><font size="3">Understanding the business and problems to be solved: search for the real reasons for the need for sales forecasting and how the problem can be solved through machine learning, which aspects should be considered at the time of prediction and how better the proposal can be considering the models of prediction currently being used in the company.</font></li>
+  <li><font size="3"><b>Understanding the business and problems to be solved:</b> search for the real reasons for the need for sales forecasting and how the problem can be solved through machine learning, which aspects should be considered at the time of prediction and how better the proposal can be considering the models of prediction currently being used in the company.</font></li>
 <br>
-  <li><font size="3">Item 2.</font></li>
+  <li><font size="3"><b>Data colection:</b> downloading the corresponding .csv files from <a href="https://www.kaggle.com/c/rossmann-store-sales/data">Kaggle</a> plattform.</font></li>
 <br>
-  <li><font size="3">Item 3.</font></li>
+  <li><font size="3"><b>Data cleaning:</b> basic search for missing values, outliers and inconsistencies to make data suitable for further analysis. Adittionally a basic inspection including descriptive statistics (mean, standard deviation, range, skewness and kurtosis) should be also carried out.</font></li>
 <br>
-  <li><font size="3">Item 4.</font></li>
+  <li><font size="3"><b>Feature engineering:</b> creating new features from the existing ones to assist in both exploratory data analysis (EDA) and machine learning modelling.</font></li>
 <br>
-  <li><font size="3">Item 5.</font></li>
+  <li><font size="3"><b>Data filtering and selection:</b>  reducing the data based on business assumptions and constraints to make training set as close as possible to data in production.</font></li>
 <br>
-  <li><font size="3">Item 6.</font></li>
+  <li><font size="3"><b>EDA:</b> exploring data to search for interesting insights and understand the impact of the features on the target variable (sales).</font></li>
 <br>
-  <li><font size="3">Item 7.</font></li>
+  <li><font size="3"><b>Data preparation:</b> splitting the data into train/test sets and applying them scaling, encoding and transformation methods to make data suitable to machine learning.</font></li>
 <br>
-  <li><font size="3">Item 8.</font></li>
+  <li><font size="3"><b>Feature selection:</b> selecting the most relevant attributes based on EDA results and suitable algorithm to maximize machine learning performance.</font></li>
 <br>
-  <li><font size="3">Item 9.</font></li>
+  <li><font size="3"><b>Machine learning:</b> evaluating different algorithms (both linear and non-linear) and compare their results based on cross-validation. For the sake of this step a good candidate algorithm should perform better than the mean-based baseline estimator.</font></li>
 <br>
-  <li><font size="3">Item 10.</font></li>
+  <li><font size="3"><b>Hiperparameter fine tuning:</b> randomly test different hyperparameter values in order to find some combination that improves model performance.</font></li>
+<br>
+  <li><font size="3"><b>Error interpretation:</b> after choosing the best performing model, in the next step model performance needs to be translated to business results.</font></li>
+<br>
+  <li><font size="3"><b>Model deployment:</b> deploying the machine learning model to cloud environment so predictions can be accessed via API requests. After finishing deployment a Telegram bot is implemented to ease access to sales predictions by store number.</font></li>
 <br>  
 </ol>
 
