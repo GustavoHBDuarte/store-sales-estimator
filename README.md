@@ -1,5 +1,3 @@
-
-
 <h1><b><font color="#cc0000"><i>Store sales estimator</i></font></b></h1>
 
 <h1>1- Overview and business problem</h1>
@@ -32,9 +30,23 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <h1>3- Data description</h1>
 
 <br>
-<p><font size="3">Paragrafo 1</font></p>
-
-<p><font size="3">Paragrafo 2</font></p>
+<ul>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+  <li><font size="3"><b>Feature - </b> description</font></li><br>
+</ul>
 
 
 <h1>4- Solution strategy</h1>
@@ -57,7 +69,7 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <br>
   <li><font size="3"><b>Feature selection:</b> selecting the most relevant attributes based on EDA results and suitable algorithm to maximize machine learning performance.</font></li>
 <br>
-  <li><font size="3"><b>Machine learning:</b> evaluating different algorithms (both linear and non-linear) and compare their results based on cross-validation. For the sake of this step a good candidate algorithm should perform better than the mean-based baseline estimator.</font></li>
+  <li><font size="3"><b>Machine learning:</b> evaluating different algorithms (both linear and non-linear) and compare their results based on cross-validation. For the sake of this step a good candidate algorithm should perform better than the average-based baseline estimator.</font></li>
 <br>
   <li><font size="3"><b>Hiperparameter fine tuning:</b> randomly test different hyperparameter values in order to find some combination that improves model performance.</font></li>
 <br>
@@ -79,64 +91,90 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <h1>6- Machine Learning models</h1>
 
 <br>
-<p><font size="3">Models evaluated</font></p>
+<p><font size="3">Models evaluated:</font></p>
 
 
 <ul>
-  <li><font size="3">item 1</font></li>
-  <li><font size="3">item 2</font></li>
-  <li><font size="3">item 3</font></li>
+  <li><font size="3">Average (baseline)</font></li>
+  <li><font size="3">Linear Regression</font></li>
+  <li><font size="3">LASSO</font></li>
+  <li><font size="3">Random Forest</font></li>
+  <li><font size="3">XGBoost</font></li>
 </ul>
 
 <h1>7- Machine Learning performance</h1>
 
 <br>
-<p><font size="3">Parágrafo</font></p>
+<p><font size="3">As the time events are important for modeling sales, the cross-validation step was carried-out taking into account this important feature. Thus,cross-validation train-test split was performed considering the date of the observations (rows). Test (validation) set had a constant width (6 weeks) starting with later dates compared to training set in which had an earlier variable range  of dates. K-fold cross-validation provided replicates that allowed standard deviation calculation of each metric evaluated (Mean Absolute Error - MAE, Mean Absolute Percentage Error - MAPE, Root Mean Squared Error- RMSE).</font></p><br>
 
 
 <table border="1">
    <thead>
    <tr>
-       <th><font size="3">titulo 1</font></th>
-       <th><font size="3">titulo 2</font></th>
-       <th><font size="3">titulo 3</font></th>
-       <th><font size="3">titulo 4</font></th>
+       <th><font size="3">Model name</font></th>
+       <th><font size="3">MAE CV</font></th>
+       <th><font size="3">MAPE CV</font></th>
+       <th><font size="3">RMSE CV</font></th>
    </tr>
    </thead>
    <tbody>
    <tr>
-       <td><font size="3">Body1 linha1</font></td>
-       <td><font size="3">Body2 linha1</font></td>
-       <td><font size="3">Body3 linha1</font></td>
-       <td><font size="3">Body4 linha1</font></td>
+       <td><font size="3">Random Forest</font></td>
+       <td><font size="3">870.03 +/- 235.79</font></td>
+       <td><font size="3">0.12 +/- 0.03</font></td>
+       <td><font size="3">1314.54 +/- 344.19</font></td>
    </tr>
    <tr>
-       <td><font size="3">Body1 linha2</font></td>
-       <td><font size="3">Body2 linha2</font></td>
-       <td><font size="3">Body3 linha2</font></td>
-       <td><font size="3">Body4 linha2</font></td>
+       <td><font size="3">XGBoost</font></td>
+       <td><font size="3">1053.97 +/- 192.91</font></td>
+       <td><font size="3">0.15 +/- 0.02</font></td>
+       <td><font size="3">1509.89 +/- 268.02</font></td>
    </tr>
           <tr>
-       <td><font size="3">Body1 linha3</font></td>
-       <td><font size="3">Body2 linha3</font></td>
-       <td><font size="3">Body3 linha3</font></td>
-       <td><font size="3">Body4 linha3</font></td>
+       <td><font size="3">Linear Regression</font></td>
+       <td><font size="3">2105.49 +/- 303.38</font></td>
+       <td><font size="3">0.31 +/- 0.02</font></td>
+       <td><font size="3">2974.22 +/- 492.6</font></td>
    </tr>   
    </tbody>
    <tfoot>
-       <td><font size="3">Foot 1</font></td>
-       <td><font size="3">Foot 2</font></td>
-       <td><font size="3">Foot 3</font></td>
-       <td><font size="3">Foot 4</font></td>
+       <td><font size="3">LASSO</font></td>
+       <td><font size="3">2384.25 +/- 391.74</font></td>
+       <td><font size="3">0.34 +/- 0.01</font></td>
+       <td><font size="3">3356.23 +/- 556.83</font></td>
    </tfoot>
 </table>
 
+
+<br>
+<p><font size="3">Although Random Forest was the best performing algorithm XGBoost also had a satisfactory besformance and was selected due to its less required space in cloud server to implement model deployment, resulting in an overall cost reduction.</font>
 
 
 <h1>8- Hyperparameter fine tuning</h1>
 
 <br>
 <p><font size="3">Parágrafo</font></p>
+<br>
+
+<table border="1">
+   <thead>
+   <tr>
+       <th><font size="3">Model name</font></th>
+       <th><font size="3">MAE</font></th>
+       <th><font size="3">MAPE</font></th>
+       <th><font size="3">RMSE</font></th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+       <td><font size="3">XGBoost</font></td>
+       <td><font size="3">1022.562838</font></td>
+       <td><font size="3">0.144234</font></td>
+       <td><font size="3">1454.073855</font></td>
+   </tr>         
+   </tbody>
+</table>
+<br>
 
 <h1>9- Model performance to business performance</h1>
 
