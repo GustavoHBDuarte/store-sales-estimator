@@ -182,7 +182,8 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <p><font size="3">Parágrafo</font></p>
 <br>
 
-<img src="https://drive.google.com/u/1/uc?id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj&export=download" alt="Alt text" title="Optional title">
+
+![Image description](https://drive.google.com/u/1/uc?id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj&export=download)
 
 
 
@@ -296,8 +297,8 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 </table>
 <br>
 
+![Image description](https://drive.google.com/u/1/uc?id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1&export=download)
 
-<img src="https://drive.google.com/u/1/uc?id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1&export=download" alt="Alt text" title="Optional title">
 
 
 
