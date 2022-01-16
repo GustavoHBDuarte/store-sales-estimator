@@ -182,9 +182,7 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <p><font size="3">Parágrafo</font></p>
 <br>
 
-
-<a href="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj"><img src="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
-
+<a href="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1"><img src="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 
 
@@ -299,7 +297,7 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 </table>
 <br>
 
-<a href="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1"><img src="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj"><img src="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 
 
