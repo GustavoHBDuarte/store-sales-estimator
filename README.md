@@ -1,5 +1,9 @@
 <h1><b><font color="#cc0000"><i>Store sales estimator</i></font></b></h1>
 
+
+
+
+
 <h1>1- Overview and business problem</h1>
 
 <br>
@@ -15,6 +19,13 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <p><font size="3">Datasets used in this project can be downloaded <a href="https://www.kaggle.com/c/rossmann-store-sales/data">here</a>.</font></p>
 
 
+
+
+
+
+
+
+
 <h1>2- Assumptions</h1>
 
 <br>
@@ -25,6 +36,10 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <br>
   <li><font size="3">Rows with sales == 0 were not considered.</font></li>
 </ul>
+
+
+
+
 
 
 <h1>3- Data description</h1>
@@ -50,6 +65,11 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
   <li><font size="3"><b>Promo2Since[Year/Week] - </b>describes the year and calendar week when the store started participating in Promo2</font></li><br>
   <li><font size="3"><b>PromoInterval - </b>describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store</font></li><br>
 </ul>
+
+
+
+
+
 
 
 
@@ -84,14 +104,34 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 </ol>
 
 
-<h1>5- Insights</h1>
+
+
+
+
+
+<h1>5- Main insights</h1>
 
 <br>
-<p><font size="3">Paragrafo 1</font></p>
-
-<p><font size="3">Paragrafo 2</font></p>
+<p><font size="3">Stores with closer competitors should sell less. <b>False</b>.</font></p>
 
 
+<a href="https://drive.google.com/uc?export=view&id=11jdfbBhiB-jb58-P6uAVvH4tB6p0az-Y"><img src="https://drive.google.com/uc?export=view&id=11jdfbBhiB-jb58-P6uAVvH4tB6p0az-Y" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
+
+<p><font size="3">Stores with larger assortments should sell more. <b>False</b>.</font></p>
+
+<a href="https://drive.google.com/uc?export=view&id=1rZUqxyCtPqRasf-bZocgq9VZnfoL4m4d"><img src="https://drive.google.com/uc?export=view&id=1rZUqxyCtPqRasf-bZocgq9VZnfoL4m4d" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
+    
+
+<p><font size="3">Stores should sell more over the years. <b>False</b>.</font></p>
+
+
+<a href="https://drive.google.com/uc?export=view&id=1KIo6-SSSvKYsmyLyQKruOJwH1mRwUL8P"><img src="https://drive.google.com/uc?export=view&id=1KIo6-SSSvKYsmyLyQKruOJwH1mRwUL8P" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
+
+
+    
+    
+    
 <h1>6- Machine Learning models</h1>
 
 <br>
@@ -106,10 +146,15 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
   <li><font size="3">XGBoost</font></li>
 </ul>
 
+
+
+
+
+
 <h1>7- Machine Learning performance</h1>
 
 <br>
-<p><font size="3">As the time events are important for modeling sales, the cross-validation step was carried-out taking into account this important feature. Thus,cross-validation train-test split was performed considering the date of the observations (rows). Test (validation) set had a constant width (6 weeks) starting with later dates compared to training set in which had an earlier variable range  of dates. K-fold cross-validation provided replicates that allowed standard deviation calculation of each metric evaluated (Mean Absolute Error - MAE, Mean Absolute Percentage Error - MAPE, Root Mean Squared Error- RMSE).</font></p><br>
+<p><font size="3">As the time events are important for modeling sales, the cross-validation step was carried-out taking into account this important feature. Thus, cross-validation train-test split was performed considering the date of the observations (rows). Test (validation) set had a constant width (6 weeks) starting with later dates compared to training set in which had an earlier variable range  of dates. K-fold cross-validation provided replicates that allowed standard deviation calculation of each metric evaluated (Mean Absolute Error - MAE, Mean Absolute Percentage Error - MAPE, Root Mean Squared Error- RMSE).</font></p><br>
 
 
 <table border="1">
@@ -153,11 +198,15 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <br>
 <p><font size="3">Although Random Forest was the best performing algorithm XGBoost also had a satisfactory besformance and was selected due to its less required space in cloud server to implement model deployment, resulting in an overall cost reduction.</font>
 
+    
+    
+    
+    
 
 <h1>8- Hyperparameter fine tuning</h1>
 
 <br>
-<p><font size="3">Parágrafo</font></p>
+<p><font size="3">Model hyperparameters were adjusted via fine tuning in order to improve model performance.The following table shows the metrics for the XGBoost tuned model:</font></p>
 <br>
 
 <table border="1">
@@ -178,19 +227,35 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
    </tr>         
    </tbody>
 </table>
+
 <br>
-<p><font size="3">Parágrafo</font></p>
+<p><font size="3">Basic interpretation of model results:</font></p>
+<br>
+
+<ul>
+  <li><font size="3"><b>MAE - </b>the model has an average error value of €1022.56.</font></li><br>
+  <li><font size="3"><b>MAPE - </b>for each predicted value of the model it can underestimate or overestimate the result by 14%.</font></li><br>  
+  <li><font size="3"><b>RMSE - </b>presents an average error of €1454.07 units, however this metric is more sensitive to outliers and, therefore, when this metric is significantly different from the MAE, other adjustments must be made to the data. However, RMSE was used as an indicador of improvement for the model.</font></li><br>
+</ul>
+
+<p><font size="3">In the following figure it is possible to visualize some interesting aspects for the trained model including mainly model predictions against true values, as well as residuals distribution where it is possible to see a gaussian distribution and the apparent evenlly distributed error of predictions.</font></p>
 <br>
 
 <a href="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1"><img src="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 
+    
+    
+    
+    
+    
 
 
 <h1>9- Model performance to business performance</h1>
 
 <br>
-<p><font size="3">Parágrafo</font></p>
+<p><font size="3">In business terms, MAE means how wrong the forecast is by setting upper and lower limits. MAPE means the percentage in which the predicted values differs from the target values, being, therefore, a metric that is easily interpreted.
+The following table shows, based on MAE values, worst and best scenarios by store (where worst_scenario field is calculated by subtracting the MAE from the predictions field and the best_scenario field is calculated by adding the MAE field). It is easy to visualize that some stores are more challenging to predict (first rows) while others (last rows) are easier.</font></p>
 <br>
 
 <table border="1">
@@ -297,13 +362,13 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 </table>
 <br>
 
+<br>
+<p><font size="3">An overall view of MAE errors by store is shown in the following figure:</font></p>
+<br>
+    
 <a href="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj"><img src="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
-
-
-
-
-
+    
 
 
 
@@ -311,19 +376,38 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <h1>10- Model deployment</h1>
 
 <br>
-<p><font size="3">Parágrafo</font></p>
+
+<ul>
+  <li><font size="3">Machine learning model was successfully deployed on Heroku cloud.Telegram bot can be accessed by clicking here: <a href="https://t.me/gustavo_rossmann_telegram_bot">t.me/gustavo_rossmann_telegram_bot</a>.</font>
+      
+<font size="3">To access bot predictions the user should start a chat sending a message with the store number. If the store number exists the bot will return estimated sales for the next 6 weeks, if it does not the chat will return an error message.</font>
+</ul>    
+    
+
+<a href="https://drive.google.com/uc?export=view&id=17Db186L4t11K0AfBwNma_hfsrTCyGzNI"><img src="https://drive.google.com/uc?export=view&id=17Db186L4t11K0AfBwNma_hfsrTCyGzNI" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
+    
+    
+    
+    
+    
 
 <h1>11- Conclusions</h1>
 
 <br>
-<p><font size="3">Paragrafo 1</font></p>
+<p><font size="3">Althought the presented results is far from the best that could be achieved and there is room for model improvements decreasing its corresponding error, the proposed solution reached satisfactory results performing better than average-based sales prediction satisfying the needs of the business problem. </font></p>
+<br>
 
-<p><font size="3">Paragrafo 2</font></p>
-
-
+    
+    
+    
+    
 <h1>12- Next steps/Perspectives</h1>
 
 <br>
-<p><font size="3">Paragrafo 1</font></p>
-
-<p><font size="3">Paragrafo 2</font></p>
+   
+    
+<ul>
+  <li><font size="3">Develop other commands for the bot, such as showing the total sales for some specific date (within the 6 week period covered by the forecast).</font></li><br>
+  <li><font size="3">Integrate sales forecasting with data visualization tools (Power BI, Tableau, etc).</font></li><br>
+  <li><font size="3">Work on model improvements to reduce error metrics.</font></li>
+</ul
