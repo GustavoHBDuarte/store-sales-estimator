@@ -117,12 +117,12 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 
 <a href="https://drive.google.com/uc?export=view&id=11jdfbBhiB-jb58-P6uAVvH4tB6p0az-Y"><img src="https://drive.google.com/uc?export=view&id=11jdfbBhiB-jb58-P6uAVvH4tB6p0az-Y" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
-
+<br>
 <p><font size="3">Stores with larger assortments should sell more. <b>False</b>.</font></p>
 
 <a href="https://drive.google.com/uc?export=view&id=1rZUqxyCtPqRasf-bZocgq9VZnfoL4m4d"><img src="https://drive.google.com/uc?export=view&id=1rZUqxyCtPqRasf-bZocgq9VZnfoL4m4d" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
     
-
+<br>
 <p><font size="3">Stores should sell more over the years. <b>False</b>.</font></p>
 
 
