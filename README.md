@@ -114,19 +114,18 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <br>
 <p><font size="3">Stores with closer competitors should sell less. <b>False</b>.</font></p>
 
-
-<a href="https://drive.google.com/uc?export=view&id=11jdfbBhiB-jb58-P6uAVvH4tB6p0az-Y"><img src="https://drive.google.com/uc?export=view&id=11jdfbBhiB-jb58-P6uAVvH4tB6p0az-Y" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<img src="https://drive.google.com/uc?export=view&id=11jdfbBhiB-jb58-P6uAVvH4tB6p0az-Y" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 <br>
 <p><font size="3">Stores with larger assortments should sell more. <b>False</b>.</font></p>
 
-<a href="https://drive.google.com/uc?export=view&id=1rZUqxyCtPqRasf-bZocgq9VZnfoL4m4d"><img src="https://drive.google.com/uc?export=view&id=1rZUqxyCtPqRasf-bZocgq9VZnfoL4m4d" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
+<img src="https://drive.google.com/uc?export=view&id=1rZUqxyCtPqRasf-bZocgq9VZnfoL4m4d" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
     
 <br>
 <p><font size="3">Stores should sell more over the years. <b>False</b>.</font></p>
 
 
-<a href="https://drive.google.com/uc?export=view&id=1KIo6-SSSvKYsmyLyQKruOJwH1mRwUL8P"><img src="https://drive.google.com/uc?export=view&id=1KIo6-SSSvKYsmyLyQKruOJwH1mRwUL8P" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
+<img src="https://drive.google.com/uc?export=view&id=1KIo6-SSSvKYsmyLyQKruOJwH1mRwUL8P" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />    
 
 
     
@@ -241,7 +240,7 @@ Currently, Rossmann store managers are tasked with predicting their daily sales 
 <p><font size="3">In the following figure it is possible to visualize some interesting aspects for the trained model including mainly model predictions against true values, as well as residuals distribution where it is possible to see a gaussian distribution and the apparent evenlly distributed error of predictions.</font></p>
 <br>
 
-<a href="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1"><img src="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<img src="https://drive.google.com/uc?export=view&id=1ils8TLxWYtvTOdEHcqgX9MGP9sNO_x_1" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 
     
@@ -366,7 +365,7 @@ The following table shows, based on MAE values, worst and best scenarios by stor
 <p><font size="3">An overall view of MAE errors by store is shown in the following figure:</font></p>
 <br>
     
-<a href="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj"><img src="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<img src="https://drive.google.com/uc?export=view&id=1i0xh3FK-8t8VeMPgS3FqhhFaP75DOZIj" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
     
 
